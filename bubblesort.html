@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function bubblesort(arr){
+            for(let i=0 ; i<arr.length-1;i++){
+                for(let j = 0; j<arr.length-i-1;j++){
+                    if(arr[j]>arr[j+1]){
+                        temp = arr[j];
+                        arr[j] = arr[j+1];
+                        arr[j+1] = temp;
+                    }
+                }
+            }
+            return arr;
+        }
+        let array1 = [22,64,34,25,12,11,90]
+        document.write(bubblesort(array1))
+    </script>
+</body>
+</html>

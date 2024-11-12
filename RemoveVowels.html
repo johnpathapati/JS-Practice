@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function vowels(str){
+            let reslut = '';
+            const letters = 'aeiouAEIOU';
+            for(let i = 0 ; i<str.length ; i++){
+                if(!letters.includes(str[i])){
+                    reslut = reslut+str[i]
+                }
+            }
+            return reslut;
+        }
+        document.write(vowels("RemoveVowels"))
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = [7,98,45,88,38];
+
+        // Using Loop 
+
+        let Largestnumber = number[0];
+         for(let i=0 ; i<number.length ; i++){
+            if(number[i] > Largestnumber){
+                Largestnumber = number[i]
+            }
+        }
+        document.write("Largest Number is the :"+Largestnumber +"<br>");
+
+        // math.max() with spread operator
+        const largenumber = Math.max(...number);
+        const smallestnumber = Math.min(...number);
+        document.write("Largest Number is : "+largenumber+"<br>")
+        document.write("Smallest Number number is :  "+smallestnumber)
+
+    </script>
+</body>
+</html>

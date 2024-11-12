@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function occurence(arr){
+            let Count = {};
+            
+            for (let i=0 ; i<arr.length ; i++){
+                let element = arr[i];
+
+                if(Count[element]){
+                    Count[element]++;
+                } else {
+                    Count[element] = 1;
+                }
+            }
+            return Count;
+        }
+        let array = [1,2,3,7,1,2,6,7];
+        document.write(occurence(array))
+    </script>
+</body>
+</html>
